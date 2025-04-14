@@ -1,7 +1,50 @@
 // Snack 1
 // Creare un array di oggetti:
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+const bikeList = [
+    {
+        name: "Pinarello Dogma",
+        weight: 6.9 
+    },
+    {
+         name: "Giant Propel",
+        weight: 7.4
+    },
+    {
+        name: "Specialized Tarmac",
+        weight: 8
+    },
+    {
+        name: "Bianchi Oltre",
+        weight: 7.6
+    },
+    {
+        name: "Colnago V4rs",
+        weight: 7.3
+    },
+    {
+        name: "Cannondale SuperSix",
+        weight: 6.8
+    },
+    {
+        name: "Canyon Aeroad",
+        weight: 7
+    }
+];
+
+console.table(bikeList);
+
+let ligtherBike = bikeList[0];
 // Stampare a schermo la bici con peso minore.
+
+for (i = 0; i < bikeList.length; i++) {
+    const currentBike = bikeList[i];
+    if(currentBike.weight < ligtherBike.weight) {
+        ligtherBike = currentBike;
+    }
+};
+
+console.log(ligtherBike); 
 
 // *##########################################################################################
 
